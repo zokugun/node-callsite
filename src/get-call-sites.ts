@@ -4,7 +4,7 @@ import type { CallSite } from './types.js';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const FILE_PATH_REGEX = /(file:\/\/\/[^\s()]{1,128}|\/[^\s()]{1,128}):(\d+):(\d+)/;
+const FILE_PATH_REGEX = /(file:\/\/\/[^\s()]{1,512}|\/[^\s()]{1,512}):(\d+):(\d+)/;
 // tsc-leda-toggle-next-line-if-commonjs
 // const MODULE_DIRECTORY = `${__dirname}/`;
 const MODULE_DIRECTORY = `${dirname(fileURLToPath(import.meta.url))}/`;
